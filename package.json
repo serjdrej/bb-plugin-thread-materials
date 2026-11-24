@@ -1,0 +1,36 @@
+{
+  "name": "bb-plugin-thread-materials",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "bb": ">=0.50.1",
+    "bbPluginSdk": ">=0.6.157"
+  },
+  "bb": {
+    "name": "Thread Materials",
+    "description": "Find stored files, images and links from the current thread in the side panel.",
+    "branding": {
+      "icon": "FolderOpen"
+    },
+    "server": "./server.ts",
+    "host": "./host.ts",
+    "app": "./app.tsx"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "unified": "^11.0.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.157",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
