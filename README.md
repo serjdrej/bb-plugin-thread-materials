@@ -18,6 +18,14 @@ Find the files, images, and links you shared in a BB thread. Open **+ → Мат
 
 The plugin reads the active thread's storage listing, file sizes and modification times, and user and assistant messages through BB. Its host handler resolves file paths inside the thread's storage before reading metadata. The gallery uses BB's authenticated file routes. Links are collected from supported Markdown links and plain URLs. Images and links are opened when you select them.
 
+## Install in BB
+
+```sh
+bb plugin install 'git:https://github.com/serjdrej/bb-plugin-thread-materials.git@^0.1.1'
+```
+
+Open the thread's right panel and select **+ → Материалы**.
+
 ## Install from a checkout
 
 Run from the plugin directory on the machine running BB.
@@ -33,3 +41,7 @@ bb plugin install path:.
 npm run typecheck
 bb plugin build .
 ```
+
+## License
+
+[MIT](LICENSE)
