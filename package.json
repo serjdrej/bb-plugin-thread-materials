@@ -1,6 +1,6 @@
 {
-  "name": "bb-plugin-thread-materials",
-  "version": "0.1.1",
+  "name": "bb-plugin-thread-materials-panel",
+  "version": "0.1.3",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -10,7 +10,7 @@
   },
   "bb": {
     "name": "Thread Materials",
-    "description": "Find stored files, images and links from the current thread in the side panel.",
+    "description": "Find files, images, links and suggested terminal commands from the current thread.",
     "branding": {
       "icon": "FolderOpen"
     },
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@get-bb/plugin-sdk": "0.6.157",
+    "@radix-ui/react-context-menu": "2.4.1",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "react": "^19.0.0",
